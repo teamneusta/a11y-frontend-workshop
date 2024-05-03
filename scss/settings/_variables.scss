@@ -1,0 +1,43 @@
+:root,
+:host {
+    // Colors
+    --color-highlight: #8e3a6b;
+    --color-alternatve: #385892;
+    --color-black: #04080f;
+    --color-white: #fff;
+    --color-offwhite: #f0f0f0;
+    --color-error: #d60202;
+
+    --color-background-highlight: var(--color-highlight);
+    --color-background-default: var(--color-white);
+    --color-background-defensive: var(--color-offwhite);
+    --color-background-error: rgba(214, 2, 2, 0.075);
+
+    --color-text-default: var(--color-black);
+    --color-text-inverted: var(--color-white);
+    --color-text-alternative: var(--color-alternatve);
+    --color-text-highlight: var(--color-highlight);
+    --color-text-error: var(--color-error);
+
+    --color-icon-highlight: var(--color-highlight);
+
+    --color-border-default: var(--color-black);
+    --color-border-focus: var(--color-highlight);
+    --color-border-highlight: var(--color-highlight);
+    --color-border-error: var(--color-error);
+
+    // Spacings
+    --spacing-xl: 60px;
+    --spacing-l: 45px;
+    --spacing-default: 30px;
+    --spacing-s: 20px;
+    --spacing-xs: 15px;
+    --spacing-xxs: 8px;
+    --spacing-xxxs: 4px;
+
+    // Border widths
+    --border-width-default: 1px;
+    --border-width-thick: 3px;
+    --border-width-embellish: 10px;
+    --border-width-focus: 3px;
+}

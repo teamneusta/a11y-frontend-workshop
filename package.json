@@ -1,0 +1,24 @@
+{
+    "name": "a11y-frontend-workshop",
+    "version": "0.1.0",
+    "scripts": {
+        "del:public": "npx del public",
+        "sass:local": "npx sass --watch --no-source-map --load-path=node_modules scss/main.scss public/style.css",
+        "sass:prod": "npx sass --no-source-map --load-path=node_modules scss/main.scss public/style.css",
+        "eleventy:prod": "npx @11ty/eleventy --pathprefix=a11y-examples",
+        "eleventy:local": "npx @11ty/eleventy --watch",
+        "server": "npx browser-sync ./public --watch",
+        "prod": "npm run eleventy:prod && npm run sass:prod",
+        "start": "concurrently \"npm run del:public\" \"npm run eleventy:local\" \"npm run sass:local\" \"npm run server\""
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "2.0.1",
+        "browser-sync": "2.29.3",
+        "concurrently": "8.2.2",
+        "del-cli": "5.1.0",
+        "sass": "1.74.1"
+    },
+    "dependencies": {
+        "modern-normalize": "2.0.0"
+    }
+}

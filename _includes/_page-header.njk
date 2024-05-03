@@ -1,0 +1,30 @@
+<header class="c-header">
+    <a href="/" aria-label="Startseite">
+        <img class="c-logo" src="https://www.neusta-experience.de/fileadmin/user_upload/neusta-experience_RGB.svg" alt="Startseite" />
+    </a>
+
+    <nav class="c-navigation" aria-labelledby="id-43F973C4-FB55-4C9A-AEB6-F9011F5BDD14" data-navigation>
+        <span id="id-43F973C4-FB55-4C9A-AEB6-F9011F5BDD14" hidden>Seiten</span>
+
+        <button class="c-navigation__toggle" aria-expanded="false" data-navigation-toggle>
+            <svg height="21" viewBox="0 0 24 24" width="24" aria-hidden="true" style="color: inherit;"><path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z" fill="currentColor"></path></svg>
+            Navigation
+        </button>
+
+        <ul class="c-navigation__list" role="list" data-navigation-list>
+            <li class="c-navigation__item">
+                <a class="c-navigation__link" href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Startseite</a>
+            </li>
+            <li class="c-navigation__item">
+                <span class="c-navigation__link" data-navigation-top-level-item>Examples</span>
+                <ul class="c-navigation__sub-list" role="list" data-navigation-sub-list>
+                    {%- for lesson in collections.lesson %}
+                    <li class="c-navigation__item">
+                        <a class="c-navigation__link"{% if page.url == lesson.url %} aria-current="page"{% endif %} href="{{ lesson.url }}">{{ lesson.data.title }}</a>
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>

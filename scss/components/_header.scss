@@ -1,0 +1,21 @@
+.c-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacing-s);
+    padding-block-start: var(--spacing-s);
+    margin-block-end: var(--spacing-s);
+
+    &::after {
+        width: 100%;
+        height: var(--border-width-embellish);
+        background-color: var(--color-border-highlight);
+        opacity: 0.25;
+        content: "";
+    }
+}
+
+.c-logo {
+    width: 150px;
+}

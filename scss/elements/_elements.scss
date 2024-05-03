@@ -1,0 +1,18 @@
+a {
+    color: var(--color-text-highlight);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+fieldset {
+    padding: var(--spacing-default);
+}
+
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+}

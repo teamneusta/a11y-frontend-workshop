@@ -1,0 +1,14 @@
+html {
+    font-size: 20px;
+    line-height: 1.75;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 960px;
+    margin-block-end: var(--spacing-xl);
+    margin-inline: auto;
+    padding-inline: var(--spacing-default);
+    font-family: "Ubuntu", sans-serif;
+    color: var(--color-text-default);
+}

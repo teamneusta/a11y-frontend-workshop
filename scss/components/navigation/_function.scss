@@ -1,0 +1,24 @@
+.c-navigation__link[aria-expanded="true"] svg {
+    transform: rotate(0.5turn);
+}
+.c-navigation__link[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-thickness: var(--border-width-thick);
+}
+
+@media screen and (max-width: 720px) {
+    .c-navigation:has(.c-navigation__toggle[aria-expanded="false"]) .c-navigation__list {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .c-navigation__sub-list {
+        position: absolute;
+        z-index: 1;
+    }
+    .c-navigation__toggle {
+        display: none;
+    }
+}
+

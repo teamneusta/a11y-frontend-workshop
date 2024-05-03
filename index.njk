@@ -1,0 +1,22 @@
+---
+title: "Home"
+layout: "default.njk"
+---
+
+{% include "_page-header.njk" %}
+
+<h1>Accessibility Workshop</h1>
+
+<p>This project provides interactive lessons for the Accessibility Workshop.</p>
+
+<nav aria-labelledby="20240118094354">
+    <h2 id="20240118094354">Lessons</h2>
+
+    <ul>
+        {%- for lesson in collections.lesson %}
+        <li>
+            <a href="{{ lesson.url }}">{{ lesson.data.title }}</a>
+        </li>
+        {%- endfor %}
+    </ul>
+</nav>

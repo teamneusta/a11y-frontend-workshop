@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+node_modules/
+npm-debug.log
+public/
