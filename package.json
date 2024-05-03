@@ -5,7 +5,7 @@
         "del:public": "npx del public",
         "sass:local": "npx sass --watch --no-source-map --load-path=node_modules scss/main.scss public/style.css",
         "sass:prod": "npx sass --no-source-map --load-path=node_modules scss/main.scss public/style.css",
-        "eleventy:prod": "npx @11ty/eleventy --pathprefix=a11y-examples",
+        "eleventy:prod": "npx @11ty/eleventy --pathprefix=a11y-frontend-workshop",
         "eleventy:local": "npx @11ty/eleventy --watch",
         "server": "npx browser-sync ./public --watch",
         "prod": "npm run eleventy:prod && npm run sass:prod",
