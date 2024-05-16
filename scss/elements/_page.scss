@@ -9,6 +9,10 @@ body {
     margin-block-end: var(--spacing-xl);
     margin-inline: auto;
     padding-inline: var(--spacing-default);
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Arial", sans-serif;
     color: var(--color-text-default);
+}
+
+main {
+    padding-block: var(--spacing-default);
 }

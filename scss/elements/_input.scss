@@ -1,0 +1,22 @@
+input[type="text"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    min-height: var(--height-form-elements);
+    margin-block-end: var(--spacing-s);
+    padding-inline: var(--spacing-xs);
+
+    &.is-error {
+        border-color: var(--color-border-error);
+    }
+}

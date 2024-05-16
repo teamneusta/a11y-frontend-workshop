@@ -1,0 +1,53 @@
+---
+title: "05.04 Forms: Validation"
+layout: "default.njk"
+tags: ["lesson"]
+---
+
+<main>
+    <h1>Register</h1>
+    <form class="c-form" action="#">
+        <fieldset class="c-form__fieldset">
+            <legend>Personal Data</legend>
+
+            <div class="c-radio-group">
+                <div class="c-radio-group__item">
+                    <label for="male">Male</label>
+                    <input type="radio" name="sex" id="male" checked>
+                </div>
+
+                <div class="c-radio-group__item">
+                    <label for="female">Female</label>
+                    <input type="radio" name="sex" id="female">
+                </div>
+            </div>
+
+            <label for="firstname">Firstname</label>
+            <input id="firstname" type="text" value="Max">
+
+            <label for="lastname">Lastname</label>
+            <input id="lastname" type="text" value="Mustermann">
+
+            <label for="email">Email (required)</label>
+            <input class="is-error" id="email" type="email" aria-required="true" value="max@mustermann.d">
+
+            <label for="password">Password (required)</label>
+            <input class="is-error" id="password" type="password" aria-required="true" value="password123">
+
+            <label for="street-and-number">Street & number (required)</label>
+            <input id="street-and-number" type="text" aria-required="true" value="Musterstraße 42">
+
+            <label for="city">City (required)</label>
+            <input id="city" type="text" aria-required="true" value="Musterstadt">
+
+            <label for="zip">ZIP (required)</label>
+            <input class="is-error" id="zip" type="text" aria-required="true" value="">
+        </fieldset>
+
+        <div class="c-form__footer">
+            <button class="c-button" type="submit">
+                <span class="c-button__label">Register</span>
+            </button>
+        </div>
+    </form>
+</main>

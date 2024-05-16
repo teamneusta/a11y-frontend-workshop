@@ -1,0 +1,10 @@
+.c-button {
+    min-height: var(--height-form-elements);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xxs) var(--spacing-xs);
+    background-color: var(--color-background-highlight);
+    color: var(--color-text-inverted);
+    border: var(--border-width-thick) solid var(--color-border-highlight);
+}

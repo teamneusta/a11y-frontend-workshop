@@ -1,0 +1,11 @@
+.c-radio-group {
+    display: flex;
+    gap: var(--spacing-default);
+    margin-block-end: var(--spacing-s);
+}
+
+.c-radio-group__item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xxxs);
+}

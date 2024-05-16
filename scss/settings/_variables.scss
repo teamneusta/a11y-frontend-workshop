@@ -22,7 +22,6 @@
     --color-icon-highlight: var(--color-highlight);
 
     --color-border-default: var(--color-black);
-    --color-border-focus: var(--color-highlight);
     --color-border-highlight: var(--color-highlight);
     --color-border-error: var(--color-error);
 
@@ -39,5 +38,7 @@
     --border-width-default: 1px;
     --border-width-thick: 3px;
     --border-width-embellish: 10px;
-    --border-width-focus: 3px;
+
+    // Heights
+    --height-form-elements: 44px;
 }

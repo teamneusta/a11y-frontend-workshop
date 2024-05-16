@@ -1,0 +1,16 @@
+.c-input-hint {
+    padding: var(--spacing-xs);
+    margin-block-end: var(--spacing-s);
+    border: var(--border-width-default) solid var(--color-border-default);
+    background-color: var(--color-background-defensive);
+    font-size: 0.8rem;
+
+    > *:last-child {
+        margin-block-end: 0;
+    }
+}
+
+.c-input-hint__title {
+    margin-block-end: var(--spacing-xs);
+    font-weight: bold;
+}
