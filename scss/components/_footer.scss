@@ -1,0 +1,15 @@
+.c-footer {
+    padding-block: var(--spacing-default);
+    position: relative;
+
+    &::before {
+        width: 200vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -50vw;
+        z-index: -1;
+        background-color: var(--color-background-defensive);
+        content: "";
+    }
+}

@@ -6,13 +6,13 @@ html {
 
 body {
     max-width: 960px;
-    margin-block-end: var(--spacing-xl);
     margin-inline: auto;
     padding-inline: var(--spacing-default);
     font-family: "Arial", sans-serif;
     color: var(--color-text-default);
+    overflow-x: hidden;
 }
 
 main {
-    padding-block: var(--spacing-default);
+    padding-block: var(--spacing-default) var(--spacing-xl);
 }

@@ -1,0 +1,8 @@
+.c-footer-navigation__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-default);
+    margin: 0;
+    list-style: none;
+}
