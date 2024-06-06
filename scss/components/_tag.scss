@@ -1,0 +1,7 @@
+.c-tag {
+    font-style: italic;
+
+    &::before {
+        content: "#";
+    }
+}

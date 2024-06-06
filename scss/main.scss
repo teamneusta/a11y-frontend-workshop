@@ -26,6 +26,11 @@
 @use "components/radio-group";
 @use "components/footer";
 @use "components/footer-navigation";
+@use "components/card-group";
+@use "components/card";
+@use "components/tag";
+@use "components/filter";
+@use "components/section-title";
 
 // Utilities
 @use "utilities/visually-hidden";

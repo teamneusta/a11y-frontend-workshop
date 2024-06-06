@@ -1,0 +1,12 @@
+.c-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-default);
+    margin: 0;
+    list-style: none;
+}
+
+.c-card-group__item {
+    flex-basis: 275px;
+    flex-grow: 1;
+}
