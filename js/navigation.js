@@ -1,10 +1,10 @@
 (function () {
     const navigation = document.querySelector('[data-navigation]');
-    const topLevelItems = navigation.querySelectorAll('[data-navigation-top-level-item]');
+    const topLevelItems = navigation?.querySelectorAll('[data-navigation-top-level-item]');
 
     const icon = `<svg width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg>`;
 
-    topLevelItems.forEach(item => {
+    topLevelItems?.forEach(item => {
         const text = item.innerText;
         const parent = item.parentElement;
         const subList = parent.querySelector('[data-navigation-sub-list]');
@@ -79,7 +79,7 @@
     const navList = document.querySelector('[data-navigation-list]');
     const toggle = document.querySelector('[data-navigation-toggle]');
 
-    toggle.addEventListener('click', (e) => {
+    toggle?.addEventListener('click', (e) => {
         const trigger = e.currentTarget;
         if (trigger.getAttribute('aria-expanded') === 'true') {
             trigger.setAttribute('aria-expanded', 'false');
