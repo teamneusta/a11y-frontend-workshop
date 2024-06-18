@@ -55,7 +55,7 @@
 
     function collapseDropdownsWhenTabbingOutsideNav(e) {
         let target = e.target;
-        if (e.keyCode === 9 && !navigation.contains(document.activeElement)) {
+        if (e.keyCode === 9 && !navigation?.contains(document.activeElement)) {
             dropdowns.forEach(function (dropdown) {
                 dropdown.setAttribute('hidden', '');
                 let btn = dropdown.parentNode.querySelector('button');
