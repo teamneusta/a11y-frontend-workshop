@@ -1,5 +1,6 @@
 .c-input-hint {
     padding: var(--spacing-xs);
+    margin-block-start: calc(var(--spacing-xxs) * -1);
     margin-block-end: var(--spacing-s);
     border: var(--border-width-default) solid var(--color-border-default);
     background-color: var(--color-background-defensive);
