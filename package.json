@@ -9,7 +9,7 @@
         "eleventy:local": "npx @11ty/eleventy --watch",
         "server": "npx browser-sync ./public --watch",
         "prod": "npm run eleventy:prod && npm run sass:prod",
-        "start": "concurrently \"npm run del:public\" \"npm run eleventy:local\" \"npm run sass:local\" \"npm run server\""
+        "start": "npx del public && npx @11ty/eleventy && concurrently \"npm run eleventy:local\" \"npm run sass:local\" \"npm run server\""
     },
     "devDependencies": {
         "@11ty/eleventy": "2.0.1",
