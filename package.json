@@ -2,7 +2,7 @@
     "name": "a11y-frontend-workshop",
     "version": "0.1.0",
     "scripts": {
-        "del:public": "npx del public --force",
+        "del:public": "npx del-cli public",
         "sass:local": "npx sass --watch --no-source-map --load-path=node_modules scss/main.scss public/style.css",
         "sass:prod": "npx sass --no-source-map --load-path=node_modules scss/main.scss public/style.css",
         "eleventy:prod": "npx @11ty/eleventy --pathprefix=a11y-frontend-workshop",
