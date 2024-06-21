@@ -1,6 +1,9 @@
 {
     "name": "a11y-frontend-workshop",
     "version": "0.1.0",
+    "engines": {
+        "node": ">=20"
+    },
     "scripts": {
         "del:public": "npx del-cli public",
         "sass:local": "npx sass --watch --no-source-map --load-path=node_modules scss/main.scss public/style.css",
