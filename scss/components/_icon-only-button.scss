@@ -1,0 +1,14 @@
+.c-icon-only-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--height-controls-small);
+    height: var(--height-controls-small);
+    border: var(--border-width-default) solid var(--color-border-default);
+    border-radius: 50%;
+}
+
+.c-icon-only-button__icon {
+    width: calc(var(--height-controls-small) / 2);
+    height: calc(var(--height-controls-small) / 2);
+}
