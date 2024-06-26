@@ -8,43 +8,77 @@ tags: ["lesson"]
 <main>
     <h1>Checkout</h1>
     <form class="c-form" action="#">
-        <div class="c-form__fieldset">
-            <h2>Billing Address</h2>
+        <fieldset class="c-form__fieldset">
+            <legend>
+                <h2>Billing Address</h2>
+            </legend>
 
-            <label>Firstname</label>
-            <input type="text" placeholder="e.g. “Max”">
+            <label for="billing_first-name">Firstname</label>
+            <input
+                id="billing_first-name"
+                type="text"
+            >
 
-            <label>Lastname</label>
-            <input type="text" placeholder="e.g. “Mustermann”">
+            <label for="billing_last-name">Lastname</label>
+            <input
+                id="billing_last-name"
+                type="text"
+            >
 
-            <label>Street</label>
-            <input type="text" placeholder="e.g. “Konsul-Smidt-Straße”">
+            <label for="billing_street">Street</label>
+            <input
+                id="billing_street"
+                type="text"
+            >
 
-            <label>Number</label>
-            <input type="text" placeholder="e.g. “26”">
+            <label for="billing_street-number">Number</label>
+            <input
+                id="billing_street-number"
+                type="text"
+            >
 
-            <label>ZIP</label>
-            <input type="text" placeholder="e.g. “28217”">
-        </div>
+            <label for="billing_postal-code">ZIP</label>
+            <input
+                id="billing_postal-code"
+                type="text"
+            >
+        </fieldset>
 
-        <div class="c-form__fieldset">
-            <h2>Delivery Address</h2>
+        <fieldset class="c-form__fieldset">
+            <legend>
+                <h2>Delivery Address</h2>
+            </legend>
 
-            <label>Firstname</label>
-            <input type="text" placeholder="e.g. “Max”">
+            <label for="delivery_first-name">Firstname</label>
+            <input
+                id="delivery_first-name"
+                type="text"
+            >
 
-            <label>Lastname</label>
-            <input type="text" placeholder="e.g. “Mustermann”">
+            <label for="delivery_last-name">Lastname</label>
+            <input
+                id="delivery_last-name"
+                type="text"
+            >
 
-            <label>Street</label>
-            <input type="text" placeholder="e.g. “Konsul-Smidt-Straße”">
+            <label for="delivery_street">Street</label>
+            <input
+                id="delivery_street"
+                type="text"
+            >
 
-            <label>Number</label>
-            <input type="text" placeholder="e.g. “26”">
+            <label for="delivery_street-number">Number</label>
+            <input
+                id="delivery_street-number"
+                type="text"
+            >
 
-            <label>ZIP</label>
-            <input type="text" placeholder="e.g. “28217”">
-        </div>
+            <label for="delivery_postal-code">ZIP</label>
+            <input
+                id="delivery_postal-code"
+                type="text"
+            >
+        </fi>
 
         <div class="c-form__footer">
             <button class="c-button" type="submit">
