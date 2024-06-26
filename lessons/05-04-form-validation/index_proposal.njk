@@ -11,27 +11,110 @@ tags: ["lesson"]
         <fieldset class="c-form__fieldset">
             <legend>Personal Data</legend>
 
-            <label for="firstname">Firstname</label>
-            <input id="firstname" type="text" value="Max">
+            <label for="firstname">Firstname <span class="u-text-optional">(optional)</label>
+            <input
+                id="firstname"
+                type="text"
+                value="Max"
+            >
 
-            <label for="lastname">Lastname</label>
-            <input id="lastname" type="text" value="Mustermann">
+            <label for="lastname">Lastname <span class="u-text-optional">(optional)</label>
+            <input
+                id="lastname"
+                type="text"
+                value="Mustermann"
+            >
 
-            <label for="email">Email (required)</label>
-            <input class="is-error" id="email" type="email" aria-required="true" value="max@mustermann.d">
+            <!--
+                [A-Za-z0-9._+\-']+:
+                    [A-Za-z0-9._+\-']: This character class allows uppercase and lowercase letters (A-Z, a-z), digits (0-9), as well as the characters . (dot), _ (underscore), +, - (hyphen), and ' (apostrophe).
+                    +: The plus sign means that at least one character from the character class must be present (one or more).
 
-            <label for="password">Password (required)</label>
-            <input class="is-error" id="password" type="password" aria-required="true" value="password123">
-            <div class="c-input-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum repellat perspiciatis dolorem minima, accusantium aliquid ea, veritatis iusto porro sed illum voluptate! Perferendis amet quibusdam, unde ad iure, totam?</div>
+                @:
+                    The @ symbol is a fixed part of the email address and must occur exactly once.
 
-            <label for="street-and-number">Street & number (required)</label>
-            <input id="street-and-number" type="text" aria-required="true" value="Musterstraße 42">
+                [A-Za-z0-9.\-]+:
+                    [A-Za-z0-9.\-]: This character class allows uppercase and lowercase letters (A-Z, a-z), digits (0-9), as well as the characters . (dot) and - (hyphen).
+                    +: The plus sign means that at least one character from the character class must be present (one or more).
 
-            <label for="city">City (required)</label>
-            <input id="city" type="text" aria-required="true" value="Musterstadt">
+                \.:
+                    The backslash (\) is used to escape the dot (.), so it is treated as a literal dot character and not as a wildcard character that matches any character.
 
-            <label for="zip">ZIP (required)</label>
-            <input class="is-error" id="zip" type="text" aria-required="true" value="">
+                [A-Za-z]{2,}$:
+                    [A-Za-z]: This character class allows uppercase and lowercase letters (A-Z, a-z).
+                    {2,}: This quantifier means that at least two characters from the character class must be present.
+                    $: The dollar sign indicates that the preceding pattern must match the end of the string.
+            -->
+            <label for="email">Email <span aria-hidden="true">(required)</span></label>
+            <input
+                id="email"
+                type="email"
+                value="max@mustermann.d"
+                pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$"
+                aria-required="true"
+                aria-invalid="true"
+                aria-describedby="error-email"
+            >
+            <div
+                class="c-error-message"
+                id="error-email"
+            >
+                <p class="c-error-message__text">Error: Address does not match requirements. The toplevel domain at the end requires atleast 2 characters.</p>
+            </div>
+
+            <label for="password">Password <span aria-hidden="true">(required)</span></label>
+            <input
+                id="password"
+                type="password"
+                value="password123"
+                aria-required="true"
+                aria-invalid="true"
+                aria-describedby="error-password hint-password"
+            >
+            <div
+                class="c-error-message"
+                id="error-password"
+            >
+                <p class="c-error-message__text">Error: Password does not match requirements. Please provide a password that matches the described requirements.</p>
+            </div>
+            <div
+                class="c-input-hint"
+                id="hint-password"
+            >
+                <p class="c-input-hint__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum repellat perspiciatis dolorem minima, accusantium aliquid ea, veritatis iusto porro sed illum voluptate! Perferendis amet quibusdam, unde ad iure, totam?</p>
+            </div>
+
+            <label for="street-and-number">Street & number <span aria-hidden="true">(required)</span></label>
+            <input
+                id="street-and-number"
+                type="text"
+                value="Musterstraße 42"
+                aria-required="true"
+            >
+
+            <label for="city">City <span aria-hidden="true">(required)</span></label>
+            <input
+                id="city"
+                type="text"
+                value="Musterstadt"
+                aria-required="true"
+            >
+
+            <label for="zip">ZIP <span aria-hidden="true">(required)</span></label>
+            <input
+                id="zip"
+                type="text"
+                value=""
+                aria-required="true"
+                aria-invalid="true"
+                aria-describedby="error-zip"
+            >
+            <div
+                class="c-error-message"
+                id="error-zip"
+            >
+                <p class="c-error-message__text">Invalid zip code.</p>
+            </div>
         </fieldset>
 
         <div class="c-form__footer">
