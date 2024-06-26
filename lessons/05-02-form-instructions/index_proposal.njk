@@ -9,14 +9,43 @@ tags: ["lesson"]
     <h1>Reset Password</h1>
     <form class="c-form" action="#">
         <fieldset class="c-form__fieldset">
-            <label for="old-password">Old Password <span class="u-text-inferior">(required)</span></label>
-            <input id="old-password" type="password">
+            <label for="old-password">Old Password <span class="u-text-inferior" aria-hidden="true">(required)</span></label>
+            <input
+                id="old-password"
+                type="password"
+                required
+            >
 
-            <label for="new-password">New Password <span class="u-text-inferior">(required)</span></label>
-            <input id="new-password" type="password" placeholder="At least 12 characters, lowercase and uppercase characters, letters and numbers, at least on special character (e.g. !, @, #, ?)">
+            <label for="new-password">New Password <span class="u-text-inferior" aria-hidden="true">(required)</span></label>
+            <!--
+                (?=.*[a-z]): At least one lowercase letter.
+                (?=.*[A-Z]): At least one uppercase letter.
+                (?=.*\d): At least one digit.
+                (?=.*[@$!%*?&]): At least one special character (you can add more special characters if needed).
+                [A-Za-z\d@$!%*?&]{12,}: Ensures the string is at least 12 characters long and consists of only the specified character sets.
+            -->
+            <input
+                id="new-password"
+                type="password"
+                required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$"
+                aria-describedby="desc_new-password"
+            >
+            <div class="c-input-hint">
+                <span
+                    id="desc_new-password"
+                    class="c-input-hint__title"
+                >
+                    At least 12 characters, lowercase and uppercase characters, letters and numbers, at least on special character (e.g. !, @, #, ?)
+                </span>
+            </div>
 
-            <label for="new-password-repeat">Repeat New Password <span class="u-text-inferior">(required)</span></label>
-            <input id="new-password-repeat" type="password">
+            <label for="new-password-repeat">Repeat New Password <span class="u-text-inferior" aria-hidden="true">(required)</span></label>
+            <input
+                id="new-password-repeat"
+                type="password"
+                required
+            >
         </fieldset>
 
         <div class="c-form__footer">
