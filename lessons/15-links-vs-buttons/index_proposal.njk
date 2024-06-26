@@ -1,0 +1,211 @@
+---
+title: "15 Links vs. Buttons"
+layout: "default.njk"
+date: 2024-04-01
+tags: ["lesson"]
+---
+
+{% include "_page-header.njk" %}
+
+<main>
+    <header class="c-section-title">
+        <h1 class="c-section-title__title">Our most recent topics</h1>
+        <p class="c-section-title__subtitle">Phasellus habitant bibendum elementum primis nibh orci mattis posuere fermentum augue sagittis semper in netus scelerisque elit dictum fames aenean curabitur erat placerat</p>
+    </header>
+
+    <div class="c-filter">
+        <p class="c-filter__title">Filter:</p>
+        <ul class="c-filter__list" data-filter="123456789">
+            <li class="c-filter__item">
+                <a class="c-filter__button is-active" data-filter-target="*" href="#">All Topics</a>
+            </li>
+            <li class="c-filter__item">
+                <a class="c-filter__button" data-filter-target="architecture" href="#">Architecture</a>
+            </li>
+            <li class="c-filter__item">
+                <a class="c-filter__button" data-filter-target="people" href="#">People</a>
+            </li>
+            <li class="c-filter__item">
+                <a class="c-filter__button" data-filter-target="animals" href="#">Animals</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="c-card-group" id="123456789">
+        <li class="c-card-group__item" data-filter-item="architecture">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/1/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Lorem</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">Architecture</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Lorem</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="people">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/2/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Ipsum dolor</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">People</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Ipsum dolor</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="animals">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/323/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Amet consectetur</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">Animals</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Amet consectetur</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="people">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/4/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Provident</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">People</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Provident</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="animals">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/510/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Quis assumenda numquam</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">Animals</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Quis assumenda numquam</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="people">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/46/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Cupiditate eum quam tempora</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">People</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Cupiditate eum quam tempora</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="architecture">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/50/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Repellat</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">Architecture</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Repellat</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="architecture">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/521/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Doloribus</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">Architecture</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Doloribus</a>
+                </footer>
+            </div>
+        </li>
+        <li class="c-card-group__item" data-filter-item="people">
+            <div class="c-card">
+                <figure class="c-card__media">
+                    <img src="https://picsum.photos/id/991/1200/800" alt="">
+                </figure>
+                <div class="c-card__body">
+                    <h3 class="c-card__title">Voluptatibus labore</h3>
+                    <ul class="c-card__tags">
+                        <li class="c-card__tag">
+                            <span class="c-tag">People</span>
+                        </li>
+                    </ul>
+                    <p class="c-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque adipisci quod? Aut obcaecati perferendis repellendus excepturi, velit fugiat omnis dignissimos porro reiciendis. Cum laudantium, et corporis culpa reprehenderit animi.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <a class="c-card__link" href="#">Read more about Voluptatibus labore</a>
+                </footer>
+            </div>
+        </li>
+    </ul>
+</main>
+
+{% include "_page-footer.njk" %}
+
+<script src="/js/filter.js"></script>

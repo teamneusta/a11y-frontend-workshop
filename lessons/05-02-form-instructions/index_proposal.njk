@@ -1,0 +1,28 @@
+---
+title: "06 Forms: Form Instructions"
+layout: "default.njk"
+date: 2024-02-02
+tags: ["lesson"]
+---
+
+<main>
+    <h1>Reset Password</h1>
+    <form class="c-form" action="#">
+        <fieldset class="c-form__fieldset">
+            <label for="old-password">Old Password <span class="u-text-inferior">(required)</span></label>
+            <input id="old-password" type="password">
+
+            <label for="new-password">New Password <span class="u-text-inferior">(required)</span></label>
+            <input id="new-password" type="password" placeholder="At least 12 characters, lowercase and uppercase characters, letters and numbers, at least on special character (e.g. !, @, #, ?)">
+
+            <label for="new-password-repeat">Repeat New Password <span class="u-text-inferior">(required)</span></label>
+            <input id="new-password-repeat" type="password">
+        </fieldset>
+
+        <div class="c-form__footer">
+            <button class="c-button" type="submit">
+                <span class="c-button__label">Reset Password</span>
+            </button>
+        </div>
+    </form>
+</main>

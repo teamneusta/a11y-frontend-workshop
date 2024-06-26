@@ -1,0 +1,55 @@
+---
+title: "05 Forms: Basics"
+layout: "default.njk"
+date: 2024-02-01
+tags: ["lesson"]
+---
+
+<main>
+    <h1>Checkout</h1>
+    <form class="c-form" action="#">
+        <div class="c-form__fieldset">
+            <h2>Billing Address</h2>
+
+            <label>Firstname</label>
+            <input type="text" placeholder="e.g. “Max”">
+
+            <label>Lastname</label>
+            <input type="text" placeholder="e.g. “Mustermann”">
+
+            <label>Street</label>
+            <input type="text" placeholder="e.g. “Konsul-Smidt-Straße”">
+
+            <label>Number</label>
+            <input type="text" placeholder="e.g. “26”">
+
+            <label>ZIP</label>
+            <input type="text" placeholder="e.g. “28217”">
+        </div>
+
+        <div class="c-form__fieldset">
+            <h2>Delivery Address</h2>
+
+            <label>Firstname</label>
+            <input type="text" placeholder="e.g. “Max”">
+
+            <label>Lastname</label>
+            <input type="text" placeholder="e.g. “Mustermann”">
+
+            <label>Street</label>
+            <input type="text" placeholder="e.g. “Konsul-Smidt-Straße”">
+
+            <label>Number</label>
+            <input type="text" placeholder="e.g. “26”">
+
+            <label>ZIP</label>
+            <input type="text" placeholder="e.g. “28217”">
+        </div>
+
+        <div class="c-form__footer">
+            <button class="c-button" type="submit">
+                <span class="c-button__label">Proceed with checkout</span>
+            </button>
+        </div>
+    </form>
+</main>

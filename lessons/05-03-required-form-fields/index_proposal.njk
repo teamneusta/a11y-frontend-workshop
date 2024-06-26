@@ -1,0 +1,67 @@
+---
+title: "07 Forms: Required Form Fields"
+layout: "default.njk"
+date: 2024-02-03
+tags: ["lesson"]
+---
+
+<main>
+    <h1>Account Data</h1>
+    <form class="c-form" action="#">
+        <fieldset class="c-form__fieldset">
+            <legend>Title <span class="u-text-optional">(optional)</span></legend>
+
+            <div class="c-radio-group">
+                <div class="c-radio-group__item">
+                    <label for="male">Mr.</label>
+                    <input type="radio" name="title" id="male">
+                </div>
+
+                <div class="c-radio-group__item">
+                    <label for="female">Mrs.</label>
+                    <input type="radio" name="title" id="female">
+                </div>
+
+                <div class="c-radio-group__item">
+                    <label for="none">None</label>
+                    <input type="radio" name="title" id="none">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="c-form__fieldset">
+            <legend>Personal Data</legend>
+
+            <label for="firstname">Firstname *</label>
+            <input id="firstname" type="text">
+
+            <label for="lastname">Lastname *</label>
+            <input id="lastname" type="text">
+
+            <label for="birthday">Birthday <span class="u-text-optional">(optional)</span></label>
+            <input id="birthday" type="date">
+        </fieldset>
+
+        <fieldset class="c-form__fieldset">
+            <legend>Contact</legend>
+
+            <label for="street-and-number">Street & number *</label>
+            <input id="street-and-number" type="text">
+
+            <label for="zip">ZIP *</label>
+            <input id="zip" type="text">
+
+            <label for="telephone">Telephone <span class="u-text-optional">(optional)</span></label>
+            <input id="telephone" type="tel">
+
+            <label for="email">Email *</label>
+            <input id="email" type="email">
+        </fieldset>
+
+        <div class="c-form__footer">
+            <button class="c-button" type="submit">
+                <span class="c-button__label">Save Account Data</span>
+            </button>
+        </div>
+    </form>
+</main>

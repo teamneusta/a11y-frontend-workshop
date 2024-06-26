@@ -1,0 +1,43 @@
+---
+title: "08 Forms: Validation"
+layout: "default.njk"
+date: 2024-02-04
+tags: ["lesson"]
+---
+
+<main>
+    <h1>Register</h1>
+    <form class="c-form" action="#">
+        <fieldset class="c-form__fieldset">
+            <legend>Personal Data</legend>
+
+            <label for="firstname">Firstname</label>
+            <input id="firstname" type="text" value="Max">
+
+            <label for="lastname">Lastname</label>
+            <input id="lastname" type="text" value="Mustermann">
+
+            <label for="email">Email (required)</label>
+            <input class="is-error" id="email" type="email" aria-required="true" value="max@mustermann.d">
+
+            <label for="password">Password (required)</label>
+            <input class="is-error" id="password" type="password" aria-required="true" value="password123">
+            <div class="c-input-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum repellat perspiciatis dolorem minima, accusantium aliquid ea, veritatis iusto porro sed illum voluptate! Perferendis amet quibusdam, unde ad iure, totam?</div>
+
+            <label for="street-and-number">Street & number (required)</label>
+            <input id="street-and-number" type="text" aria-required="true" value="Musterstraße 42">
+
+            <label for="city">City (required)</label>
+            <input id="city" type="text" aria-required="true" value="Musterstadt">
+
+            <label for="zip">ZIP (required)</label>
+            <input class="is-error" id="zip" type="text" aria-required="true" value="">
+        </fieldset>
+
+        <div class="c-form__footer">
+            <button class="c-button" type="submit">
+                <span class="c-button__label">Register</span>
+            </button>
+        </div>
+    </form>
+</main>
