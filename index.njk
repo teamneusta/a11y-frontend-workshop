@@ -20,3 +20,15 @@ layout: "default.njk"
         {%- endfor %}
     </ul>
 </nav>
+
+<nav aria-labelledby="nav_proposals">
+    <h2 id="nav_proposals">Lessons: Proposals</h2>
+
+    <ul>
+        {%- for proposal in collections.proposal %}
+        <li>
+            <a href="{{ proposal.url }}">{{ proposal.data.title }}</a>
+        </li>
+        {%- endfor %}
+    </ul>
+</nav>
