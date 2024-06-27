@@ -1,0 +1,120 @@
+:root {
+    // Focus
+    --focus-outline-width: 3px;
+    --focus-outline-style: dashed;
+    --focus-outline-color: #000;
+    --focus-outline-offset: 0.1em;
+
+    // Input
+    --input-border-width: 2px;
+    --input-border-width-error: var(--border-width-thick);
+    --input-border-style: solid;
+    --input-border-color: var(--border-width-default);
+}
+
+
+
+// ERROR-MESSAGE
+
+/**
+ * Enhance error message with icon to have 3 cues to convey status to users
+ * - text
+ * - change visual appearance (colors, borders)
+ * - icon
+ */
+.c-error-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+    margin-block-start: calc(var(--spacing-s) * -1);
+    margin-block-end: var(--spacing-s);
+    background-color: var(--color-error);
+    color: #fff;
+    padding: 0.5em;
+
+    > *:last-child {
+        margin-block-end: 0;
+    }
+
+    // Warning icon.
+    // The content after `/` is announced for AT, in this case blank as it should not be announced, purely visual decoration.
+    &::before {
+        content: "\26A0"; // fallback if alt text syntax is not supported
+        content: "\26A0" / "";
+        font-size: 1.5em;
+        line-height: 1;
+    }
+
+}
+
+
+
+// INPUTS
+
+/**
+ * Improve visibility
+ */
+input,
+select {
+    border-width: var(--input-border-width);
+    border-style: var(--input-border-style);
+    border-color: var(--input-border-color);
+
+    &[type="checkbox"],
+    &[type="radio"] {
+        margin-block-end: 0;
+    }
+
+}
+
+input,
+select,
+textarea {
+
+    &[aria-invalid="true"] {
+        --input-border-width: var(--input-border-width-error);
+        --input-border-color: var(--color-border-error);
+    }
+
+}
+
+
+
+// LABEL
+
+/**
+ * Use `[aria-invalid]` as a hook instead of presentational classes like `.is-error`
+ * as the attribute can be used for semantics + hook in function & style.
+ */
+label {
+
+    // input wrapped in label (e.g. checkbox, radiobutton)
+    &:has([aria-invalid="true"]),
+    // input as direct sibling of label
+    &:has(+ [aria-invalid="true"]) {
+        color: var(--color-text-error);
+    }
+
+}
+
+
+
+// FOCUS
+
+/**
+ * Undo lesson styles for disabling outline on `:focus`.
+ * This was common in the past as the visual appearance of an outline on
+ * pointer / touch input was undesired.
+ * With `:focus-visible` only focus is set when using keyboard, controller
+ * or similar input devices.
+ */
+*:focus {
+    outline: unset;
+}
+
+:focus-visible {
+    outline-width: var(--focus-outline-width);
+    outline-style: var(--focus-outline-style);
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
