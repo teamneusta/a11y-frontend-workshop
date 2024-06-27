@@ -8,11 +8,13 @@
         "del:public": "npx del-cli public",
         "sass:local": "npx sass --watch --no-source-map --load-path=node_modules scss/main.scss public/style.css",
         "sass:prod": "npx sass --no-source-map --load-path=node_modules scss/main.scss public/style.css",
+        "sass:proposal:local": "npx sass --watch --no-source-map --load-path=node_modules scss/proposal.scss public/proposal.css",
+        "sass:proposal:prod": "npx sass --no-source-map --load-path=node_modules scss/proposal.scss public/proposal.css",
         "eleventy:prod": "npx @11ty/eleventy --pathprefix=a11y-frontend-workshop",
         "eleventy:local": "npx @11ty/eleventy --watch",
         "server": "npx browser-sync ./public --watch --no-notify",
-        "prod": "npm run eleventy:prod && npm run sass:prod",
-        "start": "npm run del:public && npx @11ty/eleventy && npm run sass:prod && concurrently \"npm run eleventy:local\" \"npm run sass:local\" \"npm run server\""
+        "prod": "npm run eleventy:prod && npm run sass:prod && npm run sass:proposal:prod",
+        "start": "npm run del:public && npx @11ty/eleventy && npm run sass:prod && npm run sass:proposal:prod && concurrently \"npm run eleventy:local\" \"npm run sass:local\" \"npm run sass:proposal:local\" \"npm run server\""
     },
     "devDependencies": {
         "@11ty/eleventy": "2.0.1",
