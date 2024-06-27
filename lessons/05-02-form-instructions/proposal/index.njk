@@ -31,12 +31,16 @@ tags: ["proposal"]
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$"
                 aria-describedby="desc_new-password"
             >
-            <div class="c-input-hint">
-                <p
-                    id="desc_new-password"
-                    class="c-input-hint__title"
-                >
-                    At least 12 characters, lowercase and uppercase characters, letters and numbers, at least on special character (e.g. !, @, #, ?)
+            <div class="c-input-hint" id="desc_new-password">
+                <p class="c-input-hint__title">
+                    Password Requirements:
+
+                    <ul style="margin-block-end: 0;">
+                        <li>At least 12 characters</li>
+                        <li>lowercase and uppercase characters </li>
+                        <li>letters and numbers</li>
+                        <li>at least on special character (for example !, @, #, ?)</li>
+                    </ul>
                 </p>
             </div>
 
