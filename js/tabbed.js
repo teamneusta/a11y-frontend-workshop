@@ -4,7 +4,7 @@
 
     allTabbed.forEach(tabbed => {
         const tablist = tabbed.querySelector('ul');
-        const lis = tablist.querySelectorAll('li');
+        const listItems = tablist.querySelectorAll('li');
         const tabs = tablist.querySelectorAll('a');
         const panels = tabbed.querySelectorAll('section');
 
@@ -12,8 +12,8 @@
 
         // Assign ARIA roles
         tablist.setAttribute('role', 'tablist');
-        lis.forEach(li => {
-            li.setAttribute('role', 'presentation');
+        listItems.forEach(listItem => {
+            listItem.setAttribute('role', 'presentation');
         })
         tabs.forEach((tab, i) => {
             tab.setAttribute('role', 'tab');
