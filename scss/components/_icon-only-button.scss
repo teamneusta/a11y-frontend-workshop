@@ -9,6 +9,6 @@
 }
 
 .c-icon-only-button__icon {
-    width: calc(var(--height-controls-small) / 2);
-    height: calc(var(--height-controls-small) / 2);
+    width: var(--icon-size-default);
+    height: var(--icon-size-default);
 }
