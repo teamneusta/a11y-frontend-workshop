@@ -22,7 +22,7 @@
     white-space: nowrap;
     text-decoration: none;
 
-    &.is-active {
+    &[aria-pressed="true"] {
         background-color: var(--color-background-highlight);
         color: var(--color-text-inverted);
     }

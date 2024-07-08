@@ -9,9 +9,9 @@
             button.addEventListener('click', (e) => {
                 const target = button.dataset.filterTarget;
                 buttons.forEach(button => {
-                    button.classList.remove('is-active');
+                    button.setAttribute('aria-pressed', 'false');
                 })
-                button.classList.add('is-active');
+                button.setAttribute('aria-pressed', 'true');
                 items.forEach(item => {
                     item.hidden = true;
                 })
