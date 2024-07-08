@@ -2,13 +2,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: var(--height-controls-small);
-    height: var(--height-controls-small);
+    width: var(--height-form-elements);
+    height: var(--height-form-elements);
     border: var(--border-width-default) solid var(--color-border-default);
     border-radius: 50%;
 }
 
 .c-icon-only-button__icon {
-    width: var(--icon-size-default);
-    height: var(--icon-size-default);
+    width: var(--icon-size-l);
+    height: var(--icon-size-l);
 }

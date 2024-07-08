@@ -1,0 +1,14 @@
+.c-icon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xxs);
+    font-size: 0.8em;
+    color: var(--color-text-highlight);
+    text-decoration: underline;
+}
+
+.c-icon-link__icon {
+    width: var(--icon-size-default);
+    height: var(--icon-size-default);
+    color: inherit;
+}
