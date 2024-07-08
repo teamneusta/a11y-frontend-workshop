@@ -20,11 +20,25 @@
 }
 
 .c-disclosure__title {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xxs);
     margin-block: 0;
-    cursor: pointer;
+
+    button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-xxs);
+        cursor: pointer;
+
+        svg {
+            flex-shrink: 0;
+            transform: rotate(0.25turn);
+        }
+
+        &[aria-expanded="true"] svg {
+            transform: rotate(0.75turn);
+        }
+    }
 }
 
 .c-disclosure__panel {
