@@ -23,6 +23,16 @@
                     {%- endfor %}
                 </ul>
             </li>
+            <li class="c-navigation__item">
+                <span class="c-navigation__link" data-navigation-top-level-item>Proposals</span>
+                <ul class="c-navigation__sub-list" role="list" data-navigation-sub-list>
+                    {%- for lesson in collections.proposal %}
+                    <li class="c-navigation__item">
+                        <a class="c-navigation__link"{% if page.url == lesson.url %} aria-current="page"{% endif %} href="{{ lesson.url }}">{{ lesson.data.title }}</a>
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </li>
         </ul>
     </div>
 </div>
