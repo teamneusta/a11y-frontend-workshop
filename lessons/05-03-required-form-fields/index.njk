@@ -9,27 +9,6 @@ tags: ["lesson"]
     <h1>Account Data</h1>
     <form class="c-form" action="#">
         <fieldset class="c-form__fieldset">
-            <legend>Title <span class="u-text-optional">(optional)</span></legend>
-
-            <div class="c-radio-group">
-                <div class="c-radio-group__item">
-                    <label for="male">Mr.</label>
-                    <input type="radio" name="title" id="male">
-                </div>
-
-                <div class="c-radio-group__item">
-                    <label for="female">Mrs.</label>
-                    <input type="radio" name="title" id="female">
-                </div>
-
-                <div class="c-radio-group__item">
-                    <label for="none">None</label>
-                    <input type="radio" name="title" id="none">
-                </div>
-            </div>
-        </fieldset>
-
-        <fieldset class="c-form__fieldset">
             <legend>Personal Data</legend>
 
             <label for="firstname">Firstname *</label>
@@ -56,6 +35,22 @@ tags: ["lesson"]
 
             <label for="email">Email *</label>
             <input id="email" type="email">
+        </fieldset>
+
+        <fieldset class="c-form__fieldset">
+            <legend>Subscribe to Newsletter <span class="u-text-optional">(optional)</span></legend>
+
+            <div class="c-radio-group">
+                <div class="c-radio-group__item">
+                    <label for="newsletter-subscription-yes">Yes</label>
+                    <input type="radio" name="newsletter-subscription" id="newsletter-subscription-yes">
+                </div>
+
+                <div class="c-radio-group__item">
+                    <label for="newsletter-subscription-no">No</label>
+                    <input type="radio" name="newsletter-subscription" id="newsletter-subscription-no">
+                </div>
+            </div>
         </fieldset>
 
         <div class="c-form__footer">
