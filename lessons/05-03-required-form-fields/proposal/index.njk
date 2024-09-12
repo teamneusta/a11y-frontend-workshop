@@ -13,41 +13,6 @@ tags: ["proposal"]
         novalidate
     >
         <fieldset class="c-form__fieldset">
-            <legend>Title <span class="u-text-inferior">(optional)</span></legend>
-
-            <div class="c-radio-group">
-                <div class="c-radio-group__item">
-                    <label for="male" aria-labelledby="title_mister">Mr.</label>
-                    <!-- @REVIEW: Use written word of abbreviation? -->
-                    <span class="u-visually-hidden" id="title_mister">Mister</span>
-                    <input
-                        type="radio"
-                        name="title"
-                        id="male"
-                    >
-                </div>
-
-                <div class="c-radio-group__item">
-                    <label for="female">Mrs.</label>
-                    <input
-                        type="radio"
-                        name="title"
-                        id="female"
-                    >
-                </div>
-
-                <div class="c-radio-group__item">
-                    <label for="none">None</label>
-                    <input
-                        type="radio"
-                        name="title"
-                        id="none"
-                    >
-                </div>
-            </div>
-        </fieldset>
-
-        <fieldset class="c-form__fieldset">
             <legend>Personal Data</legend>
 
             <label for="firstname">Firstname <span class="u-text-inferior">(required)</span></label>
@@ -107,6 +72,30 @@ tags: ["proposal"]
                 type="email"
                 aria-required="true"
             >
+        </fieldset>
+
+        <fieldset class="c-form__fieldset">
+            <legend>Subscribe to Newsletter <span class="u-text-inferior">(optional)</span></legend>
+
+            <div class="c-radio-group">
+                <div class="c-radio-group__item">
+                    <label for="newsletter-subscription-yes">Yes</label>
+                    <input
+                        type="radio"
+                        name="newsletter-subscription"
+                        id="newsletter-subscription-yes"
+                    >
+                </div>
+
+                <div class="c-radio-group__item">
+                    <label for="newsletter-subscription-no">No</label>
+                    <input
+                        type="radio"
+                        name="newsletter-subscription"
+                        id="newsletter-subscription-no"
+                    >
+                </div>
+            </div>
         </fieldset>
 
         <div class="c-form__footer">
