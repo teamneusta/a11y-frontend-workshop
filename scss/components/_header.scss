@@ -10,6 +10,7 @@
     &::after {
         width: 100%;
         height: var(--border-width-embellish);
+        margin-block-start: var(--spacing-s);
         background-color: var(--color-border-highlight);
         opacity: 0.25;
         content: "";
