@@ -1,4 +1,9 @@
 .c-error-message {
     margin-block-start: calc(var(--spacing-s) * -1);
+    margin-block-end: var(--spacing-s);
+    padding: var(--spacing-xs);
+    border: var(--border-width-default) solid var(--color-border-error);
+    background-color: var(--color-background-error);
     color: var(--color-text-error);
+    font-size: 0.8rem;
 }
