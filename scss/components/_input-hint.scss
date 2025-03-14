@@ -6,6 +6,10 @@
     background-color: var(--color-background-defensive);
     font-size: 0.8rem;
 
+    .c-error-message + & {
+        margin-block-start: calc(var(--spacing-s) * -1);
+    }
+
     > *:last-child {
         margin-block-end: 0;
     }
