@@ -4,6 +4,7 @@
     --color-highlight: #8e3a6b;
     --color-alternatve: #385892;
     --color-black: #04080f;
+    --color-grey: #ccc;
     --color-white: #fff;
     --color-offwhite: #f0f0f0;
     --color-error: #d60202;
@@ -22,6 +23,7 @@
     --color-icon-highlight: var(--color-highlight);
 
     --color-border-default: var(--color-black);
+    --color-border-mute: var(--color-grey);
     --color-border-highlight: var(--color-highlight);
     --color-border-error: var(--color-error);
 

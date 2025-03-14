@@ -11,26 +11,26 @@ tags: ["lesson"]
         <fieldset class="c-form__fieldset">
             <legend>Personal Data</legend>
 
-            <label for="firstname">Firstname</label>
+            <label for="firstname">Firstname <span class="u-text-inferior">(optional)</span></label>
             <input id="firstname" type="text" value="Max">
 
-            <label for="lastname">Lastname</label>
+            <label for="lastname">Lastname <span class="u-text-inferior">(optional)</span></label>
             <input id="lastname" type="text" value="Mustermann">
 
-            <label for="email">Email (required)</label>
+            <label for="email">Email</label>
             <input class="is-error" id="email" type="email" aria-required="true" value="max@mustermann.d">
 
-            <label for="password">Password (required)</label>
+            <label for="password">Password</label>
             <input class="is-error" id="password" type="password" aria-required="true" value="password123">
-            <div class="c-input-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum repellat perspiciatis dolorem minima, accusantium aliquid ea, veritatis iusto porro sed illum voluptate! Perferendis amet quibusdam, unde ad iure, totam?</div>
+            <div class="c-input-hint"><strong>Password instructions:</strong> At least 12 characters, lowercase and uppercase characters, letters and numbers, at least on special character (e.g. !, @, #, ?)</div>
 
-            <label for="street-and-number">Street & number (required)</label>
+            <label for="street-and-number">Street & number</label>
             <input id="street-and-number" type="text" aria-required="true" value="Musterstraße 42">
 
-            <label for="city">City (required)</label>
+            <label for="city">City</label>
             <input id="city" type="text" aria-required="true" value="Musterstadt">
 
-            <label for="zip">ZIP (required)</label>
+            <label for="zip">ZIP</label>
             <input class="is-error" id="zip" type="text" aria-required="true" value="">
         </fieldset>
 

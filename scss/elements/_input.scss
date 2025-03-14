@@ -15,6 +15,7 @@ input[type="email"] {
     min-height: var(--height-form-elements);
     margin-block-end: var(--spacing-s);
     padding-inline: var(--spacing-xs);
+    border: var(--border-width-default) solid var(--color-border-mute);
 
     &.is-error {
         border-color: var(--color-border-error);
