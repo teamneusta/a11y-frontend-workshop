@@ -1,0 +1,29 @@
+.c-exercise {
+    padding-block: var(--spacing-xs);
+    position: relative;
+
+    &::before {
+        width: 200vw;
+        height: 100%;
+        position: absolute;
+        left: -50vw;
+        bottom: 0;
+        z-index: -1;
+        background-color: var(--color-background-alternative);
+        border-block-end: var(--border-width-thick) solid var(--color-border-default);
+        content: "";
+    }
+
+    > :last-child {
+        margin-block-end: 0;
+    }
+}
+
+.c-exercise__title {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.c-exercise__text {
+    line-height: 1.5;
+}
