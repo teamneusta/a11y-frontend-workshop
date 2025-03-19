@@ -2,7 +2,7 @@
 :host {
     // Colors
     --color-highlight: #8e3a6b;
-    --color-alternatve: #385892;
+    --color-alternative: #385892;
     --color-black: #04080f;
     --color-grey: #ccc;
     --color-white: #fff;
@@ -10,13 +10,14 @@
     --color-error: #d60202;
 
     --color-background-highlight: var(--color-highlight);
+    --color-background-alternative: rgb(56, 88, 146, 0.25);
     --color-background-default: var(--color-white);
     --color-background-defensive: var(--color-offwhite);
     --color-background-error: rgba(214, 2, 2, 0.075);
 
     --color-text-default: var(--color-black);
     --color-text-inverted: var(--color-white);
-    --color-text-alternative: var(--color-alternatve);
+    --color-text-alternative: var(--color-alternative);
     --color-text-highlight: var(--color-highlight);
     --color-text-error: var(--color-error);
 
