@@ -1,5 +1,5 @@
-module.exports = function (eleventyConfig) {
-    const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+module.exports = async function (eleventyConfig) {
+    const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
     eleventyConfig.addPassthroughCopy({
