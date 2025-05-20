@@ -17,13 +17,13 @@
         "start": "npm run del:public && npx @11ty/eleventy && npm run sass:prod && npm run sass:proposal:prod && concurrently \"npm run eleventy:local\" \"npm run sass:local\" \"npm run sass:proposal:local\" \"npm run server\""
     },
     "devDependencies": {
-        "@11ty/eleventy": "2.0.1",
-        "browser-sync": "3.0.2",
-        "concurrently": "8.2.2",
-        "del-cli": "5.1.0",
-        "sass": "1.77.5"
+        "@11ty/eleventy": "3.1.0",
+        "browser-sync": "3.0.4",
+        "concurrently": "9.1.2",
+        "del-cli": "6.0.0",
+        "sass": "1.89.0"
     },
     "dependencies": {
-        "modern-normalize": "2.0.0"
+        "modern-normalize": "3.0.1"
     }
 }
